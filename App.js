@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import './App.css';
+import InsuranceCard from './InsuranceCard';
+import Claims from './Claim';
 import carImage from './car.png';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
+
   return (
+
     <div className="dashboard-container">
       {activeTab === 'home' && (
         <div>
@@ -26,6 +30,7 @@ function App() {
 
               <div className="stats-grid">
                 <div className="stat-card">
+                  {/* <div className="stat-icon-circle">📩</div> */}
                   <span className="stat-value">132</span>
                   <span className="stat-label">Active policies</span>
                 </div>
@@ -140,6 +145,13 @@ function App() {
           </div>
         </div>
       )}
+      {activeTab === 'claims' && (
+        <Claims onComplete={() => setActiveTab('home')} />
+      )}
+      {activeTab === 'profile' && (
+        <InsuranceCard />
+      )}
+
       <nav className="bottom-nav">
         <div className={`nav-item ${activeTab === 'home' ? 'active' : ''}`} onClick={() => setActiveTab('home')}>Home</div>
         <div className="nav-item">Policies</div>
