@@ -1,0 +1,124 @@
+.id-card-section {
+  margin-bottom: 25px;
+}
+
+.id-card {
+  background-color: white;
+  border: 1px solid #d1cfc8;
+  padding: 15px;
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.id-card-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #333;
+  padding-bottom: 8px;
+}
+
+.id-brand {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #003366;
+  margin-right: 10px;
+}
+
+.id-company-details p,
+.id-naic p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.2;
+}
+
+.naic-number {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.id-phone {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.id-title {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.id-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.id-grid-item {
+  padding: 5px;
+  border-right: 1px solid #333;
+}
+
+.id-grid-item:last-child {
+  border-right: none;
+}
+
+.id-grid-item label,
+.id-insured .insured-label,
+.id-vin-row label {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  font-weight: bold;
+}
+
+.id-grid-item p,
+.id-insured p,
+.id-vin-row p {
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.id-insured {
+  display: flex;
+  padding: 10px 0;
+}
+
+.insured-label {
+  width: 80px;
+}
+
+.id-vin-row {
+  border-top: 1px solid #333;
+  padding: 5px;
+}
+
+.car-details {
+  border-bottom: none;
+}
+
+.download-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #2563eb;
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+}
